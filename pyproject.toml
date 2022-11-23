@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "zunda-gui"
+version = "0.0.1"
+description = "zunda-ASMR-streamlit-gui"
+authors = ["OhkuboSGMS <sinikake.gokiburi@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "zunda_gui"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<=3.8.15"
+streamlit = "^1.14.1"
+zunda-w = {git = "https://github.com/OhkuboSGMS/zunda-ASMR"}
+streamlit-ext = "^0.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
