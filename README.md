@@ -13,6 +13,8 @@
 ## Install
 
 ```sh
+git clone https://github.com/OhkuboSGMS/zunda-gui.git
+cd zunda-gui
 pip install git+https://github.com/OhkuboSGMS/zunda-gui.git
 ```
 
