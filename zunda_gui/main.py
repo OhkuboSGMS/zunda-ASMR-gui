@@ -7,17 +7,18 @@ import streamlit_ext as ste
 from zunda_w import voice_vox
 from zunda_w.main import Options, main
 
+convert_option = Options(audio_files=['input'], )
+download_voicevox = False
+
 
 def get_speaker_info():
     voicevox_process = voice_vox.launch_voicevox_engine(voice_vox.extract_engine(root_dir=convert_option.engine_dir))
+    voice_vox.get_speakers(convert_option.speaker_json)
     speakers = voice_vox.Speakers.read(convert_option.speaker_json)
     voicevox_process.terminate()
     voicevox_process.poll()
     return speakers
 
-
-convert_option = Options(audio_files=['input'], )
-download_voicevox = False
 
 st.markdown(Path(os.path.abspath('BODY.md')).read_text(encoding='UTF-8'))
 input_audio_file = st.file_uploader('音声ファイルのアップロード', type=['.wav', '.mp3'])

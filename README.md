@@ -19,7 +19,7 @@ pip install git+https://github.com/OhkuboSGMS/zunda-gui.git
 ## Usage
 
 ```sh
-streamlit run main.py
+streamlit run zunda_gui/main.py
 ```
 
 ## Author

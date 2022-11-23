@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "zunda-gui"
-version = "0.0.1"
+version = "0.0.2"
 description = "zunda-ASMR-streamlit-gui"
 authors = ["OhkuboSGMS <sinikake.gokiburi@gmail.com>"]
 license = "MIT"
