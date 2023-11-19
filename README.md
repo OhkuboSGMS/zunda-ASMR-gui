@@ -1,3 +1,5 @@
+move to https://github.com/OhkuboSGMS/zunda_w/blob/master/zunda_w/gui/__main__.py
+----
 <h1 align="center">Welcome to zunda-gui 👋</h1>
 <p>
   <a href="#" target="_blank">
